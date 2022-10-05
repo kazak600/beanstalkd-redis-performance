@@ -1,0 +1,9 @@
+version: '3.6'
+services:
+  redis:
+    build: ./redis
+    container_name: redis_db
+    volumes:
+      - ./data/redis:/data
+    ports:
+      - '6379:6379'
