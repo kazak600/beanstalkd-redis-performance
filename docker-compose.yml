@@ -3,6 +3,7 @@ services:
   redis:
     build: ./redis
     container_name: redis_q
+    network_mode: host
     volumes:
       - ./data/redis:/data
     ports:
